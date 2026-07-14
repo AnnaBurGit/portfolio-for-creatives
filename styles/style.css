@@ -123,7 +123,7 @@
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
   --h1-color: #5200ff;
-  --h2-color: #5200ff;
+  --h2-color: #d6d0e9;
   --h3-color: #5200ff;
   --h4-color: #5200ff;
   --h5-color: #5200ff;
@@ -231,6 +231,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url(../assets/branding-images/anna-b-bg-pattern-1.svg);
+  background-repeat: no-repeat;
 }
 
 /* ------------------------------- */
@@ -697,7 +699,7 @@ a.nav-link-primary:hover {
 .nav-branding {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: var(--padding-small);
   align-items: center;
 }
@@ -719,7 +721,7 @@ a.nav-link-primary:hover {
   transition: fill 0.3s ease-in-out;
 }
 .logo:hover {
-  fill: var(--color-accent-secondary;);
+  fill: var(--color-accent-secondary);
 }
 .hero-headline-wrapper {
   width: 100%;
@@ -1633,6 +1635,9 @@ to keep your styles reusable and consistent.
     position: -webkit-sticky;
     position: sticky;
     top: 1rem;
+    text-align: center;
+    background-image: url(../assets/branding-images/anna-b-frame.svg);
+    background-repeat: no-repeat;
   }
 
   /* Main Work Area on Large Devices */

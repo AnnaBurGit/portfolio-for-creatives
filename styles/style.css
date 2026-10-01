@@ -113,25 +113,25 @@
   --color-text-secondary: #333;
   --color-accent-primary: #6f2e69;
   --color-accent-secondary: #ffffff;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-overlay-primary: rgba(0, 0, 0, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #6e2e69;
+  --color-bg: #250622;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #d6d0e9;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #000000;
+  --h2-color: #c5aba5;
+  --h3-color: #c5aba5;
+  --h4-color: #d6d0e9;
+  --h5-color: #000000;
+  --h6-color: #000000;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
-  --color-text-project-category: #ffffff;
-  --color-text-project-description: #ffffff;
+  --color-text-project-category: #6e2e69;
+  --color-text-project-description: #c6adc4;
   --color-text-project-sidebar: #222;
   --color-text-project-title: #c5aba5;
   --color-text-work-grid-title: #ffffff;
@@ -140,15 +140,15 @@
   --color-link-hover: #111;
   --color-link-visited: #7664b0;
   /* Navigation */
-  --color-nav-link: #5200ff;
+  --color-nav-link: #db199a;
   --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
+  --color-nav-arrow: #c88aa6;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-arrow-stroke: #3f2a6c;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
   --color-bg-full-width: #f5f5f5;
-  --color-bg-project-description: #f5f5f5;
+  --color-bg-project-description: #6e2e69;
   --color-bg-sidebar-project: transparent;
   --color-bg-sidebar-work: #c5aba5;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);

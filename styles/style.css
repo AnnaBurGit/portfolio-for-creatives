@@ -1638,7 +1638,7 @@ to keep your styles reusable and consistent.
     position: sticky;
     top: 1rem;
     text-align: center;
-    background-image: url(../assets/branding-images/anna-b-frame.svg);
+    /* background-image: url(../assets/branding-images/anna-b-frame.svg); */
     background-repeat: no-repeat;
   }
 

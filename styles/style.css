@@ -117,28 +117,29 @@
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #250622;
+  --color-bg: #e0d0ca;
+  --header-bgcolor: #c5aba5;
   --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
+  --color-bg-footer: #c5aba5;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
   --h1-color: #000000;
-  --h2-color: #c5aba5;
-  --h3-color: #c5aba5;
-  --h4-color: #d6d0e9;
+  --h2-color: #6f2e69;
+  --h3-color: #6f2e69;
+  --h4-color: #a852ff;
   --h5-color: #000000;
   --h6-color: #000000;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #6e2e69;
-  --color-text-project-description: #c6adc4;
+  --color-text-project-description: #34012f;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #c5aba5;
+  --color-text-project-title: #6f2e69;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #d6d0e9;
-  --color-link-hover: #111;
-  --color-link-visited: #7664b0;
+  --color-link: #6e2e69;
+  --color-link-hover: #c790ff;
+  --color-link-visited: #6e2e69;
   /* Navigation */
   --color-nav-link: #db199a;
   --color-nav-link-hover: #321575;
@@ -161,7 +162,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #ffffff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -232,10 +233,10 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.work-sidebar-page {
+/* .work-sidebar-page {
   background-image: url(../assets/branding-images/anna-b-bg-pattern-1.svg);
   background-repeat: no-repeat;
-}
+} */
 
 /* ------------------------------- */
 /* 🖍️ Text Highlight Styles */
@@ -293,12 +294,6 @@ svg {
 .width-third,
 .width-two-thirds {
   width: 100%;
-}
-
-/* Adds a dashed border to help you see the box while you're designing */
-.border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
-  /* TODO: Delete this later – it’s just here to help you see the box while you work */
 }
 
 /* ---------------------- */
@@ -696,12 +691,13 @@ a.nav-link-primary:hover {
 }
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
+  background: var(--header-bgcolor);
 }
 
 .nav-branding {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   padding: var(--padding-small);
   align-items: center;
 }
@@ -735,6 +731,8 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
+  background-image: url("../assets/branding-images/anna-b-forest.svg");
+  background-repeat: no-repeat;
 }
 
 .hero-icon {
@@ -753,6 +751,24 @@ a.nav-link-primary:hover {
   flex-direction: row;
   justify-content: space-between;
   padding: var(--padding-small);
+}
+
+.custom-navigation {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #63324e;
+  text-decoration: none;
+
+  /* border: 1px solid currentColor; */
+  padding: 0.6rem 1rem;
+  transition: all 0.3s ease;
+}
+.custom-nav {
+  display: flex;
+  flex-direction: column;
+}
+.stars {
+  color: #63324e;
 }
 
 /*
@@ -1167,7 +1183,6 @@ a.nav-link-primary:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  background: var(--color-bg-project-description);
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
@@ -1205,7 +1220,14 @@ a.nav-link-primary:hover {
   justify-content: space-between;
   width: 100%;
 }
-
+.portfolio-video {
+  width: 100%;
+  /* max-width: 400px; */
+  aspect-ratio: 9 / 16;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 /* Styling for left and right arrows */
 .arrow-left,
 .arrow-right {
@@ -1275,6 +1297,15 @@ a.nav-link-primary:hover {
      • CSS: styles/interactive-blobs.css
      • JS:  js/interactive-blobs.js
 ---------------------------------------------------------------- */
+
+.holding-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: url(../assets/project-1/anna-b-index.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .holding-page-animation {
   width: 10rem;
@@ -1414,7 +1445,8 @@ to keep your styles reusable and consistent.
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 3.275rem;
+    line-height: 1;
   }
 
   h2 {
@@ -1471,7 +1503,7 @@ to keep your styles reusable and consistent.
   }
 
   .hero {
-    min-height: 100vh;
+    min-height: 70vh;
   }
 
   .hero-headline-wrapper {
@@ -1640,6 +1672,15 @@ to keep your styles reusable and consistent.
     text-align: center;
     /* background-image: url(../assets/branding-images/anna-b-frame.svg); */
     background-repeat: no-repeat;
+    outline: red;
+  }
+  .corner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    outline: #00ffff;
   }
 
   /* Main Work Area on Large Devices */

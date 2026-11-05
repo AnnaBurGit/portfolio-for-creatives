@@ -32,58 +32,79 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body class="project-2">
     <header class="hero-header">
       <ul class="nav-branding">
-        <li><a href="work.html" class="custom-navigation">Work</a></li>
+        <li class="custom-nav">
+          <div class="stars">✧</div>
+          <div class="stars">⨳</div>
+          <div class="stars">✧</div>
+        </li>
+        <li>
+          <a href="illustration.html" class="custom-navigation">Work</a>
+        </li>
         <li class="nav-branding-logo">
-          <a href="index.html"><img src="assets/branding-images/logo.svg" /></a>
+          <a href="index.html"
+            ><img src="assets/branding-images/anna-b-logo-test.svg"
+          /></a>
         </li>
         <li><a href="about.html" class="custom-navigation">About</a></li>
+        <li class="custom-nav">
+          <div class="stars">✧</div>
+          <div class="stars">⨳</div>
+          <div class="stars">✧</div>
+        </li>
       </ul>
     </header>
     <div class="project-wrapper">
       <aside class="project-aside">
         <div class="project-info">
-          <h1 class="project-title">Project 2: [Your Title Here]</h1>
+          <h1 class="project-title">Slavic Folk Festival</h1>
           <p class="project-description">
-            Replace with your project description. Highlight your role, the
-            challenges you solved, and your design process.
-          </p>
-          <p class="project-description">
-            <strong>Quick tip:</strong> This is project-2.html. Duplicate it to
-            add more projects and update the navigation arrows.
+            A promotional poster and motion piece for a fictional summer
+            solstice festival. The central character was designed using elements
+            of Slavic mythology and traditional symbolism to embody the
+            festival’s mysterious, ritualistic atmosphere and create a
+            recognizable visual identity for the event.
           </p>
         </div>
         <ul class="project-navigation">
           <li class="arrow">
-            <a href="project-1.html" class="navigation-arrow"
+            <a href="The Burn.html" class="navigation-arrow"
               ><i class="fa-sharp fa-solid fa-arrow-left fa-2x"></i
             ></a>
           </li>
           <li class="arrow">
-            <a href="project-3.html" class="navigation-arrow"
+            <a href="The Sea.html" class="navigation-arrow"
               ><i class="fa-sharp fa-solid fa-arrow-right fa-2x"></i
             ></a>
           </li>
         </ul>
       </aside>
       <main class="project-details">
-        <figure class="project-image">
-          <img
-            src="assets/project-1/anna-b-dream-painting.jpg"
-            width="1500"
-            height="1875"
-            loading="lazy"
-            alt="Describe your project"
-          />
-        </figure>
+        <a
+          href="assets/project-1/anna-b-folk-poster.jpg"
+          data-lightbox="project-1"
+          data-title="Slavic Folk Festival"
+        >
+          <figure class="project-image border">
+            <img
+              src="assets/project-1/anna-b-folk-poster.jpg"
+              width="1500"
+              height="2059"
+              loading="lazy"
+              alt="Describe your project"
+            />
+          </figure>
+        </a>
+
         <div class="project-description-container">
           <div class="project-title col-2">
-            <h2>Build Your Project Page</h2>
+            <h2>Character Design</h2>
             <h3>
               Start by swapping the demo images with your work. Then copy or
               delete the sections you need—the responsive layout is handled
@@ -102,14 +123,14 @@
             </p>
           </div>
         </div>
+
         <figure class="project-image">
-          <img
-            src="assets/temp/first-name-last-name--project-title--category--placeholder-neo-classical-3.jpg"
-            width="1920"
-            height="1080"
-            loading="lazy"
-            alt="Describe your project"
-          />
+          <video class="portfolio-video" autoplay muted loop playsinline>
+            <source
+              src="assets/project-1/anna-b-folk-video.mp4"
+              type="video/mp4"
+            />
+          </video>
         </figure>
         <div class="project-description-container">
           <div class="project-description col-4">
@@ -200,7 +221,7 @@
     <div id="myID" class="bottomMenu hide">
       <a href="project-1.html">Previous Project</a>
     </div>
-
+    <script src="./lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
     <script type="text/javascript">
       myID = document.getElementById("myID");
 

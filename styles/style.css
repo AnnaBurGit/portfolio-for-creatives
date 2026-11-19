@@ -138,7 +138,7 @@
   --color-text-work-grid-title: #ffffff;
   /* Link States */
   --color-link: #6e2e69;
-  --color-link-hover: #c790ff;
+  --color-link-hover: #fff;
   --color-link-visited: #6e2e69;
   /* Navigation */
   --color-nav-link: #db199a;
@@ -212,7 +212,7 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor: default, auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -716,7 +716,7 @@ a.nav-link-primary:hover {
 }
 .logo {
   fill: var(--color-accent-primary);
-  transition: fill 0.3s ease-in-out;
+  transition: fill 0.1s ease-in-out;
 }
 .logo:hover {
   fill: var(--color-accent-secondary);

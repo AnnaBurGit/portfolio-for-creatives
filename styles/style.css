@@ -692,6 +692,8 @@ a.nav-link-primary:hover {
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
   background: var(--header-bgcolor);
+  position: relative;
+  z-index: 100;
 }
 
 .nav-branding {
@@ -733,6 +735,8 @@ a.nav-link-primary:hover {
   text-align: center; /* Keeps text centered */
   background-image: url("../assets/branding-images/anna-b-forest.svg");
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 .hero-icon {
@@ -797,7 +801,6 @@ a.nav-link-primary:hover {
   background: var(
     --color-bg-full-width
   ); /* Background color for full-width sections */
-  margin-bottom: 1rem;
 }
 
 .full-width-headline-wrapper {
@@ -1183,7 +1186,7 @@ a.nav-link-primary:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding: var(--padding-small);
+  /* padding: var(--padding-small); */
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
 }
